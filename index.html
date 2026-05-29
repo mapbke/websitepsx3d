@@ -1,160 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>The Curse of Inheritance</title>
-
     <link rel="stylesheet" href="style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
-<div class="scanlines"></div>
-<div class="noise"></div>
+    <!-- Анимированный фон -->
+    <div class="bg-animation"></div>
+    
+    <!-- Парящие частицы -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Эффекты -->
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+    <div class="vignette"></div>
 
-<header class="hero">
-
-    <img src="concept.png" class="bg">
-
-    <div class="overlay"></div>
-
-    <div class="hero-content">
-
-        <h1>
-            THE CURSE<br>
-            OF INHERITANCE
-        </h1>
-
-        <p>
-            PSX psychological horror inspired by Puppet Combo.
-        </p>
-
-        <button id="enterBtn">
-            ENTER THE HOUSE
-        </button>
-
-    </div>
-
-</header>
-
-<section class="story-section">
-
-    <h2>Story</h2>
-
-    <div class="story">
-
-        <p>
-            Your great-grandmother is dead.
-            You arrive at House 23.
-        </p>
-
-        <p>
-            The countryside is silent.
-            The house feels wrong.
-        </p>
-
-        <p>
-            Then you see the cat.
-        </p>
-
-        <p class="green">
-            “Do not enter the other rooms.”
-        </p>
-
-        <img src="assets/Cat.png" class="cat-image">
-
-    </div>
-
-</section>
-
-<section>
-
-    <h2>Features</h2>
-
-    <div class="features-grid">
-
-        <div class="card">
-
-            <h3>PSX Style</h3>
-
-            <p>
-                Low resolution visuals,
-                VHS filters,
-                analog horror atmosphere.
-            </p>
-
+    <header class="hero">
+        <img src="concept.png" class="bg" alt="House 23">
+        <div class="overlay"></div>
+        
+        <div class="hero-content">
+            <div class="title-container">
+                <h1>
+                    <span class="title-line">THE CURSE</span>
+                    <span class="title-line">OF INHERITANCE</span>
+                </h1>
+            </div>
+            
+            <p class="subtitle">PSX psychological horror inspired by Puppet Combo.</p>
+            
+            <button id="enterBtn">
+                <span class="btn-text">ENTER THE HOUSE</span>
+                <span class="btn-glitch"></span>
+            </button>
         </div>
-
-        <div class="card">
-
-            <h3>Psychological Horror</h3>
-
-            <p>
-                Fear grows through silence,
-                tension and isolation.
-            </p>
-
+        
+        <div class="scroll-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
+    </header>
 
-        <div class="card">
-
-            <h3>The Cat</h3>
-
-            <p>
-                It watches.
-                It waits.
-                Sometimes it is inside.
+    <section class="story-section">
+        <div class="section-number">01</div>
+        <h2 class="section-title">Story</h2>
+        
+        <div class="story">
+            <p class="story-text reveal">
+                Your great-grandmother is dead.
+                <span class="text-highlight">You arrive at House 23.</span>
             </p>
-
+            
+            <p class="story-text reveal">
+                The countryside is <span class="text-fade">silent.</span>
+                The house feels <span class="text-glitch">wrong.</span>
+            </p>
+            
+            <p class="story-text reveal">
+                Then you see the <span class="text-cat">cat.</span>
+            </p>
+            
+            <div class="cat-quote">
+                <p class="green typing-effect">"Do not enter the other rooms."</p>
+            </div>
+            
+            <div class="image-container reveal">
+                <img src="assets/Cat.png" class="cat-image" alt="The Cat">
+                <div class="image-glitch"></div>
+            </div>
         </div>
+    </section>
 
-    </div>
+    <section class="features-section">
+        <div class="section-number">02</div>
+        <h2 class="section-title">Features</h2>
+        
+        <div class="features-grid">
+            <div class="card">
+                <div class="card-icon">◈</div>
+                <h3>PSX Style</h3>
+                <p>Low resolution visuals, VHS filters, analog horror atmosphere.</p>
+                <div class="card-border"></div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">⚠</div>
+                <h3>Psychological Horror</h3>
+                <p>Fear grows through silence, tension and isolation.</p>
+                <div class="card-border"></div>
+            </div>
+            
+            <div class="card">
+                <div class="card-icon">☠</div>
+                <h3>The Cat</h3>
+                <p>It watches. It waits. Sometimes it is inside.</p>
+                <div class="card-border"></div>
+            </div>
+        </div>
+    </section>
 
-</section>
+    <section class="gallery-section">
+        <div class="section-number">03</div>
+        <h2 class="section-title">Gallery</h2>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="assets/concept.png" alt="Concept Art">
+                <div class="gallery-overlay">
+                    <span>View</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/сat.png" alt="The Cat">
+                <div class="gallery-overlay">
+                    <span>View</span>
+                </div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="assets/house.png" alt="House 23">
+                <div class="gallery-overlay">
+                    <span>View</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
+    <section class="quote-section">
+        <div class="quote-container">
+            <p class="quote">
+                "Some inherit money.<br>
+                Some inherit houses.<br>
+                <span class="quote-highlight">You inherited something else."</span>
+            </p>
+        </div>
+    </section>
 
-    <h2>Gallery</h2>
+    <footer>
+        <div class="footer-content">
+            <h2>THE CURSE OF INHERITANCE</h2>
+            <p>Mapbke Studios © 2026</p>
+            <div class="footer-line"></div>
+        </div>
+    </footer>
 
-    <div class="gallery">
-
-        <img src="assets/consept.png">
-        <img src="assets/Cat.png">
-        <img src="assets/house.png" alt="">
-
-    </div>
-
-</section>
-
-<section>
-
-    <p class="quote">
-        “Some inherit money.
-        Some inherit houses.
-        You inherited something else.”
-    </p>
-
-</section>
-
-<footer>
-
-    <h2>THE CURSE OF INHERITANCE</h2>
-
-    <p>
-        Mapbke Studios © 2026
-    </p>
-
-</footer>
-
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
