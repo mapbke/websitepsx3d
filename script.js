@@ -73,6 +73,21 @@ enterBtn.addEventListener('click', () => {
 
 // ============ ГАЛЕРЕЯ - ЛАЙТБОКС ============
 const galleryItems = document.querySelectorAll('.gallery-item');
+const catGalleryImage = galleryItems[1]?.querySelector('img');
+const storyCatImage = document.querySelector('.cat-image');
+const footerCopyright = document.querySelector('footer p');
+
+if (catGalleryImage) {
+    catGalleryImage.src = 'assets/сat.png';
+}
+
+if (storyCatImage) {
+    storyCatImage.src = 'assets/сat.png';
+}
+
+if (footerCopyright) {
+    footerCopyright.textContent = 'Mapbke Studios © 2026';
+}
 
 // Создаем лайтбокс
 const lightbox = document.createElement('div');
