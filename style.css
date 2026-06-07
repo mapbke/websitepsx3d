@@ -114,7 +114,7 @@ body {
 .noise {
     position: fixed;
     inset: 0;
-    background: url("https://i.imgur.com/o5uMfKo.png"); /* FIXME: Поменять картинку девки  на что-то другое  */
+    background: url("https://abrakadabra.fun/uploads/posts/2022-01/1642950580_4-abrakadabra-fun-p-strashnie-oboi-dlya-rabochego-stola-4.jpg"); /* FIXME: Поменять картинку девки  на что-то другое  */
     opacity: 0.04;
     pointer-events: none;
     z-index: 997;
